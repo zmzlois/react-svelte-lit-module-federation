@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "pnpm run build && pnpm run dev",
+    "build": "time pnpm --filter rspack-mf_* --parallel build",
+    "serve": "pnpm --filter rspack-mf_* --parallel serve",
+    "dev": "pnpm --filter rspack-mf_* --parallel dev"
   },
   "keywords": [],
   "author": "",
